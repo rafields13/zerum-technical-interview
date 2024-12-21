@@ -72,7 +72,7 @@ Este projeto utiliza o Jest para testes unitários. Siga as instruções abaixo 
    ```
 
 3. **Verifique os Resultados**
-   Após a execução, os resultados dos testes aparecerão no console. Caso algum teste falhe, revise o erro indicado e ajuste o código conforme necessário.
+   Após a execução, os resultados dos testes aparecerão no console.
 
 ### Testes Incluídos
 - Verificação da funcionalidade de adicionar tarefas:
