@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 	<link href="./output.css" rel="stylesheet">
 </head>
 
@@ -12,17 +13,26 @@
 		<div class="sm:flex sm:items-center">
 			<div class="sm:flex-auto">
 				<h1 class="text-base font-semibold text-gray-900">
-					To-Dos
+					Tasks
 				</h1>
 				<p class="mt-2 text-sm text-gray-700">
-					A list of all the to-dos including their title and status
+					A list of all the tasks including their title and status
 				</p>
 			</div>
-			<div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-				<button type="button"
-					class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-					Add to-do
-				</button>
+		</div>
+		<div class="mt-4 sm:flex sm:justify-between">
+			<div
+				class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+				<input id="taskInput" type="text" placeholder="Enter new task"
+					class="min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+			</div>
+			<div>
+				<button id="addTaskBtn"
+					class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add
+					Task</button>
+				<button id="suggestTaskBtn"
+					class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Suggest
+					Task</button>
 			</div>
 		</div>
 		<div class="mt-8 flow-root">
@@ -39,34 +49,23 @@
 								</th>
 								<th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
 									<span class="sr-only">
-										Edit
+										Mark as done
+									</span>
+									<span class="sr-only">
+										Remove
 									</span>
 								</th>
 							</tr>
 						</thead>
-						<tbody class="divide-y divide-gray-200">
-							<tr>
-								<td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
-									Whash the car
-								</td>
-								<td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-									Incompleted
-								</td>
-								<td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-									<a href="#" class="text-indigo-600 hover:text-indigo-900">
-										Edit
-										<span class="sr-only">
-											Whash the car
-										</span>
-									</a>
-								</td>
-							</tr>
+						<tbody class="divide-y divide-gray-200" id="table-body">
+							<!-- dados renderizarão aq -->
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="./script.js"></script>
 </body>
 
 </html>
