@@ -1,12 +1,3 @@
-# Teste - Front-End JR
-
-## Teste Prático e Teórico para:  
-**Desenvolvedor Front-End JR**
-
----
-
-### Como Rodar os Testes Unitários
-
 Este projeto utiliza o Jest para testes unitários. Siga as instruções abaixo para rodar os testes:
 
 1. **Instale as Dependências**
